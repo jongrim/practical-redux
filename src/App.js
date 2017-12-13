@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Header } from 'semantic-ui-react';
-import TabBarContainer from './features/tabs/TabBarContainer';
 import './App.css';
 
-const UnitInfo = () => <div>Unit Info content</div>;
-const Pilots = () => <div>Pilots info</div>;
-const Mechs = () => <div>Mechs content</div>;
-const UnitOrganization = () => <div>Unit Organization content</div>;
+import TabBarContainer from 'features/tabs/TabBarContainer';
+
+import Mechs from 'features/mechs/Mechs';
+import Pilots from 'features/pilots/Pilots';
+import UnitInfo from 'features/unitInfo/UnitInfo';
+import UnitOrganization from 'features/unitOrganization/UnitOrganization';
 
 class App extends Component {
   render() {
