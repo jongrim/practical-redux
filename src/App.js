@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header } from 'semantic-ui-react';
 import './App.css';
 
-import TabBarContainer from 'features/tabs/TabBarContainer';
+import TabBarContainer from 'features/tabs/TabBar';
 
 import Mechs from 'features/mechs/Mechs';
 import Pilots from 'features/pilots/Pilots';
