@@ -4,13 +4,13 @@ import { Provider } from 'react-redux';
 
 import 'semantic-ui-css/semantic.css';
 
-import configureStore from './store/configureStore';
+import configureStore from 'app/store/configureStore';
 const store = configureStore();
 
 const rootEl = document.getElementById('root');
 
 const render = () => {
-  const App = require('./App').default;
+  const App = require('./app/App').default;
 
   ReactDOM.render(
     <Provider store={store}>
@@ -22,7 +22,7 @@ const render = () => {
 
 if (process.env.NODE_ENV !== 'production') {
   if (module.hot) {
-    module.hot.accept('./App', () => {
+    module.hot.accept('./app/App', () => {
       setTimeout(render);
     });
   }
