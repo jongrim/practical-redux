@@ -10,7 +10,7 @@ const store = configureStore();
 const rootEl = document.getElementById('root');
 
 const render = () => {
-  const App = require('./app/App').default;
+  const App = require('./app/layout/App').default;
 
   ReactDOM.render(
     <Provider store={store}>
@@ -22,7 +22,7 @@ const render = () => {
 
 if (process.env.NODE_ENV !== 'production') {
   if (module.hot) {
-    module.hot.accept('./app/App', () => {
+    module.hot.accept('./app/layout/App', () => {
       setTimeout(render);
     });
   }

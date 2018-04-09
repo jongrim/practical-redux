@@ -6,6 +6,7 @@ import TabBarContainer from 'features/tabs/TabBar';
 
 import Mechs from 'features/mechs/Mechs';
 import Pilots from 'features/pilots/Pilots';
+import Tools from 'features/tools/Tools';
 import UnitInfo from 'features/unitInfo/UnitInfo';
 import UnitOrganization from 'features/unitOrganization/UnitOrganization';
 
@@ -19,7 +20,8 @@ class App extends Component {
         name: 'unitOrganization',
         label: 'UnitOrganization',
         component: UnitOrganization
-      }
+      },
+      { name: 'tools', label: 'Tools', component: Tools }
     ];
 
     return (
